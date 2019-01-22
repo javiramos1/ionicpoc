@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "ionicpoc-il",
+    "dev": "ionicpoc-il"
+  }
+}

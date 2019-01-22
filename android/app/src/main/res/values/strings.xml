@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ionicpoc</string>
+    <string name="title_activity_main">ionicpoc</string>
+    <string name="package_name">ie.irishlife.ionicpoc</string>
+    <string name="fileprovider_authority">ie.irishlife.ionicpoc.fileprovider</string>
+    <string name="custom_url_scheme">ie.irishlife.ionicpoc</string>
+</resources>

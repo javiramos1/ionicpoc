@@ -1,0 +1,6 @@
+{
+  "appId": "ie.irishlife.ionicpoc",
+  "appName": "ionicpoc",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}

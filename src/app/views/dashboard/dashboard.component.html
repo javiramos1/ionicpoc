@@ -1,0 +1,81 @@
+<div class="container">
+
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Login POC</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="" (click)="authService.logout()">Logout</a></li>
+        </ul>
+        
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+
+  <!-- Main component for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <h1>Welcome POC</h1>
+    <h3>Your TODOS</h3>
+
+   <ion-list>
+ 
+    <ng-container *ngIf="!todos || todos.length == 0">
+      <div *ngFor="let n of [0,1,2]" padding>
+        <ion-skeleton-text></ion-skeleton-text>
+        <p>
+          <ion-skeleton-text class="fake-skeleton"></ion-skeleton-text>
+        </p>
+      </div>
+    </ng-container>
+ 
+    <ion-item-sliding *ngFor="let item of todos">
+      <ion-item lines="inset" >
+        <ion-label>
+          {{ item.task }}
+          <p>{{ item.createdAt | date:'short' }}</p>
+        </ion-label>
+        <ion-note slot="end" color="primary">{{ item.priority }}</ion-note>
+      </ion-item>
+ 
+      <ion-item-options side="end">
+        <ion-item-option (click)="remove(item)" color="secondary">
+          Check
+          <ion-icon name="checkmark" slot="end"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+ 
+  </ion-list>
+
+  <p></p>
+
+   <h3>Add TODO</h3>
+    <ion-list lines="full">
+    <ion-item>
+      <ion-input required type="text" placeholder="Task" [(ngModel)]="todo.task"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input required type="number" placeholder="Priority" [(ngModel)]="todo.priority"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="saveTodo()">Save</ion-button>
+
+  </div>
+
+
+</div> <!-- /container -->
