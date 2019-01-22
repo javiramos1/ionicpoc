@@ -1,4 +1,19 @@
-IONIC 4 DEMO
+IONIC 4 Login DEMO
+
+- Add the firebase documentation to the environments.ts file
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: ""
+
+Run: ionic serve
+PWA: npm run pwa
+Android: npm run android
+
+
+*** DOCUMENTATION
 
 DOC: https://beta.ionicframework.com/
 
@@ -72,9 +87,3 @@ import { GooglePlus } from '@ionic-native/google-plus/npx';
 npm install firebase @angular/fire promise-polyfill --save
 sudo npm i -g cordova
 ionic cordova plugin add cordova-plugin-googleplus --variable REVERSED_CLIENT_ID= --variable WEB_APPLICATION_CLIENT_ID=
-
-*** Web Push Notifications
-https://angularfirebase.com/lessons/fcm-topic-notifications-angularfire-and-callable-functions/
-
-firebase init functions
-https://angularfirebase.com/lessons/angular-firebase-authentication-tutorial-email-password-signup/
