@@ -4,7 +4,7 @@ import { AuthService } from "../../services/auth.service";
 import { Platform } from "@ionic/angular";
 import * as firebase from "firebase/app";
 import { AngularFireAuth } from "@angular/fire/auth";
-
+import { environment } from "../../../environments/environment";
 import { GooglePlus } from "@ionic-native/google-plus/ngx";
 
 @Component({
@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit {
     try {
 
       const gplusUser = await this.gplus.login({
-        "webClientId": "371791543705-99hu6ru60hnga6eu8hq9q437qqk7mteo.apps.googleusercontent.com",
+        "webClientId": environment.webClientId,
         "offline": true,
         "scopes": "profile email"
       }).catch( (err) => console.log(err));

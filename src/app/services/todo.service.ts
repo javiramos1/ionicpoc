@@ -3,6 +3,7 @@ import { AngularFirestore, AngularFirestoreCollection } from "angularfire2/fires
 import { Observable } from "rxjs";
 import { map } from "rxjs/operators";
 import { AuthService } from "./auth.service";
+
 export interface Todo {
   id?: string;
   task: string;
