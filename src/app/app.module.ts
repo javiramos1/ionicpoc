@@ -19,7 +19,7 @@ import { AuthService } from "./services/auth.service";
 import { AuthGuard } from "./services/auth-guard.service";
 import { FormsModule } from "@angular/forms";
 import { AngularFirestore } from "angularfire2/firestore";
-
+import { GooglePlus } from "@ionic-native/google-plus/ngx";
 
 @NgModule({
   declarations: [
@@ -38,6 +38,7 @@ import { AngularFirestore } from "angularfire2/firestore";
   providers: [
     AuthService, AuthGuard, AngularFirestore,
     StatusBar,
+    GooglePlus,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],

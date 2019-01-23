@@ -1,6 +1,8 @@
 {
   "name": "ionicpoc",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "cc28b4bc"
 }

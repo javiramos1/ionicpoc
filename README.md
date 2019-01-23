@@ -82,7 +82,8 @@ firebase use --add
 npm install firebase angularfire2 --save
 
 *** Google Sign in
-npm i @ionic-native/google-plus@^5.0.0-beta
+npm i @ionic-native/google-plus@^5.0.0-beta --save
+
 import { GooglePlus } from '@ionic-native/google-plus/npx';
 npm install firebase @angular/fire promise-polyfill --save
 sudo npm i -g cordova

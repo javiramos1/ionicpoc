@@ -2,5 +2,6 @@
   "appId": "ie.irishlife.ionicpoc",
   "appName": "ionicpoc",
   "bundledWebRuntime": false,
-  "webDir": "www"
+  "webDir": "www",
+  "linuxAndroidStudioPath" : "/home/javier/prog/android-studio/bin/studio.sh"
 }
